@@ -81,7 +81,14 @@ WSGI_APPLICATION = "haike.wsgi.application"
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db(default="sqlite:///" + str(BASE_DIR / "db.sqlite3"))
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "postgres",
+        "USER": env("POSTGRES_USER"),
+        "PASSWORD": env("POSTGRES_PASSWORD"),
+        "HOST": env("POSTGRES_DB"),
+        "PORT": 5432,
+    }
 }
 
 # Password validation

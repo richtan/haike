@@ -1,7 +1,7 @@
-**/__pycache__/
-*.py[cod]
-.venv/
-.env
+**/__pycache__
+.venv
+.env.example
+.git*
 db.sqlite3
 docker-compose.yml
 Dockerfile
