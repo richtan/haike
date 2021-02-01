@@ -10,7 +10,6 @@ whitenoise = "*"
 psycopg2-binary = "*"
 
 [dev-packages]
-django-sass = "*"
 
 [requires]
 python_version = "3.9.1"
