@@ -5,12 +5,12 @@ name = "pypi"
 
 [packages]
 django = "*"
-psycopg2-binary = "*"
 django-environ = "*"
 whitenoise = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 django-sass = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9.1"
