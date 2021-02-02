@@ -30,6 +30,8 @@ DEBUG = env("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = env("DJANGO_ALLOWED_HOSTS", default=[])
 
+TAILWIND_APP_NAME = 'theme'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,9 +44,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "main.apps.MainConfig",
+    "tailwind.apps.TailwindConfig",
+    "theme.apps.ThemeConfig",
 ]
-
-INSTALLED_APPS += env("DJANGO_INSTALLED_APPS", default=[])
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -129,6 +131,8 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / "static"
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [BASE_DIR / "staticfiles"]
+STATICFILES_DIRS = [
+    BASE_DIR / "staticfiles",
+]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
