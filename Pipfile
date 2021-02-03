@@ -12,6 +12,11 @@ django-tailwind = "*"
 channels = "*"
 
 [dev-packages]
+coverage = "*"
+black = "*"
 
 [requires]
 python_version = "3.9.1"
+
+[pipenv]
+allow_prereleases = true
