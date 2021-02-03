@@ -1,5 +1,6 @@
 # Haike
 A cybersecurity information website
+
 By [@richtan](https://github.com/richtan) and [@leisgao](https://github.com/leisgao)
 
 ## Usage
