@@ -9,6 +9,7 @@ django-environ = "*"
 whitenoise = "*"
 psycopg2-binary = "*"
 django-tailwind = "*"
+channels = "*"
 
 [dev-packages]
 

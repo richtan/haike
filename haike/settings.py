@@ -35,6 +35,7 @@ TAILWIND_APP_NAME = 'theme'
 # Application definition
 
 INSTALLED_APPS = [
+    "channels.apps.ChannelsConfig",
     "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -78,6 +79,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "haike.wsgi.application"
+
+ASGI_APPLICATION = "haike.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
