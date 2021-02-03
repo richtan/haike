@@ -3,10 +3,20 @@ A cybersecurity information website
 
 By [@richtan](https://github.com/richtan) and [@leisgao](https://github.com/leisgao)
 
-## Usage
-Requires [Docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/)
+## Installation
+Requirements:
+- [Git](https://git-scm.com/downloads)
+- [Docker](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
 ```shell
-# Copy .env file from .env.example and adjust as needed
+# Clone the project from Github to your filesystem
+$ git clone https://github.com/richtan/haike.git
+
+# Change directory to project root
+$ cd haike/
+
+# Copy .env file from .env.example and adjust based on environment
 $ cp .env.example .env
 
 # Run project in Docker
@@ -14,7 +24,7 @@ $ docker-compose up -d --build
 ```
 
 ## Common development commands
-Requires [nodejs](https://install-node.now.sh/)
+Requires [Node.js](https://install-node.now.sh/)
 ```shell
 # Install tailwindcss
 $ python manage.py tailwind install
