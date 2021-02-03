@@ -22,7 +22,6 @@ $ python manage.py tailwind install
 # Start tailwind in dev mode
 $ python manage.py tailwind start
 
-# NOTE: Remember to do this before staging changes to tailwind.scss
 # Build tailwindcss for production
 $ python manage.py tailwind build
 
